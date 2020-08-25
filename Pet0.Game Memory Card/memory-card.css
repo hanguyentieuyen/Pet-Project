@@ -30,6 +30,14 @@ body {
     transition: transform .5s;
   }
 
+  .memory-card:active{
+    transition: transform 0.2s; 
+    /*tốc độ click image từ 1 => 0.97 trong khoảng 0.2s (tạo delay cho đẹp)*/
+    transform: scale(0.97);
+    /*Khi click thì image từ 1 giảm tới 0.97 */
+ 
+  }
+
   .front-face, .back-face{
     position: absolute;
     width: 100%;
@@ -40,18 +48,11 @@ body {
     backface-visibility: hidden;
    
   }
+  
   .front-face{
     transform: rotateY(180deg);
   }
 
-  .memory-card:active{
-    transition: transform 0.2s; 
-    /*tốc độ click image từ 1 => 0.97 trong khoảng 0.2s (tạo delay cho đẹp)*/
-    transform: scale(0.97);
-    /*Khi click thì image từ 1 giảm tới 0.97 */
-    transform:rotateY(180deg);
-  }
-
-  /* .memory-card.flip{
+  .memory-card.flip{
     transform: rotateY(180deg);
-  } */
+  }
