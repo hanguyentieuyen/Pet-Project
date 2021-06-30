@@ -1,10 +1,10 @@
 const cards = document.querySelectorAll('.memory-card');
-//let lockBoard = false;
+let lockBoard = false; 
 let hasFlipCard = false;
 let firstCard, secondCard;
 
 function flipCard(){
-    //if (lockBoard) return;
+    if (lockBoard) return; // đợi hình lật xong
     if (this === firstCard) return;
 
     this.classList.add('flip');
@@ -49,6 +49,7 @@ function flipCard(){
             firstCard.classList.remove('flip');
             secondCard.classList.remove('flip');
             resetBoard();
+        
         }, 1500);
     }
 

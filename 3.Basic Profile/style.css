@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFBD9B;
+  text-align: center;
+  margin-top: 10%;
+}
+p{
+  font-family: "Courier New", Courier, monospace;
+  font-sizeL 20px;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+ul{
+  list-style-type: none;
+}
+table,th,
+  td{
+   background-color: #fff;
+    margin-left: 20%;
+    border: 1px solid black;
+    padding: 10px;
+  }
+button{
+  padding: 10px;
+}
+
+#twitter{
+  background-color: #1DA1F2;
+}
+#git{
+  background-color: #333;
+}
